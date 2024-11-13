@@ -1,0 +1,133 @@
+site_name: Robin LIORET
+site_url: https://robinlioret.github.io/ideas/
+
+copyright: >
+  Copyright &copy; 2024 Robin LIORET – <a href="#__consent">Change cookie settings</a>
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  logo: _assets/logo.svg
+  favicon: _assets/favicon.svg
+
+  icon:
+    alternate: language
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+#    - toc.integrate
+#    - header.autohide
+    - announce.dismiss
+    - content.footnote.tooltips
+    - content.tooltips
+
+extra_css:
+  - _stylesheets/progress-bar-001.css
+  - _stylesheets/extra.css
+
+extra:
+  generator: false
+
+  consent: # https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/#cookie-consent
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+    actions:
+      - accept
+      - reject
+
+  social: # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+    - icon: fontawesome/brands/github
+      link: https://github.com/robinlioret
+
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/leikt.solreihin
+
+    - icon: fontawesome/brands/linkedin
+      link: https://fr.linkedin.com/in/robin-lioret-1a278b89
+
+#  alternate:
+#    - name: English
+#      link: /cv-en/
+#      lang: en
+#
+#    - name: Français
+#      link: /cv-fr/
+#      lang: fr
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - abbr
+  - md_in_html
+  - footnotes
+  - def_list
+  - markdown.extensions.attr_list
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.details
+  - pymdownx.betterem
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+
+  - toc:
+      title: On this page
+      permalink: true
+
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.blocks.tab:
+      alternate_style: true
+
+#watch:
+#  - includes
+#  - overrides
+
+nav:
+  - Home: index.md

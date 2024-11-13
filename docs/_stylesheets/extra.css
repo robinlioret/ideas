@@ -1,0 +1,12 @@
+.markdown-body .task-list-item {
+  list-style-type: none !important;
+}
+
+.markdown-body .task-list-item input[type="checkbox"] {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.md-grid {
+  max-width: 70%; /* or 100%, if you want to stretch to full-width */
+}
