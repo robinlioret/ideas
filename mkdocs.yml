@@ -48,6 +48,10 @@ extra_css:
   - _stylesheets/progress-bar-001.css
   - _stylesheets/extra.css
 
+extra_javascript:
+#  - https://unpkg.com/mermaid@11.4.0/dist/mermaid.min.js
+  - _javascripts/mermaid.js
+
 extra:
   generator: false
 
@@ -100,6 +104,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.progressbar
   - pymdownx.smartsymbols
+  - pymdownx.fancylists
+  - pymdownx.saneheaders
 
   - toc:
       title: On this page
@@ -125,9 +131,6 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
 
-#watch:
-#  - includes
-#  - overrides
-
-nav:
-  - Home: index.md
+watch:
+  - includes
+  - overrides
