@@ -82,3 +82,4 @@ event that notifies the users when the pod ends.
 * Pulumi Cross guard for the policies.
 * A pod that stops when TTL ends and triggers an ArgoCD event.
 * Helm to wrap up the Kubernetes resources.
+* An AWS S3 Bucket to store the IaC states

@@ -49,8 +49,8 @@ extra_css:
   - _stylesheets/extra.css
 
 extra_javascript:
-#  - https://unpkg.com/mermaid@11.4.0/dist/mermaid.min.js
-  - _javascripts/mermaid.js
+  - https://unpkg.com/mermaid@11.4.0/dist/mermaid.min.js
+#  - _javascripts/mermaid.js
 
 extra:
   generator: false
