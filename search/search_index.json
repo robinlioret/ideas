@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Ideas","text":"<p>Here, I share the ideas and Proof Of Concept that could be beneficial to a platform.</p>"},{"location":"platform/","title":"Platform","text":""}]}
